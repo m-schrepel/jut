@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>dashboard</title>
+    <meta charset="UTF-8">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <meta content="3 days" name="revisit-after">
+    <!-- build:css /styles/main.css-->
+    <link href="/styles/foundation.min.css" rel="stylesheet">
+    <link href="/styles/normalize.css" rel="stylesheet">
+    <link href="/styles/font-awesome.css" rel="stylesheet">
+    <link href="/styles/radio.css" rel="stylesheet">
+    <link href="/styles/main.css" rel="stylesheet">
+    <!-- endbuild-->
+    <ul data-tab class="tabs vertical">
+      <li id="no-radios" class="tab-title active"><a href="#overview"><i class="fa fa-bar-chart-o"></i></a></li>
+      <li class="tab-title"><a href="#impression"><i class="fa fa-eye"></i></a></li>
+      <li class="tab-title"><a href="#user-activity"><i class="fa fa-users"></i></a></li>
+    </ul>
+    <div class="tabs-content vertical">
+      <div id="radios">
+        <input id="daily" name="options" type="radio" checked>
+        <label for="daily">Today</label>
+        <input id="weekly" name="options" type="radio">
+        <label for="weekly">Weekly</label>
+        <input id="monthly" name="options" type="radio">
+        <label for="monthly">Monthly</label>
+        <input id="yearly" name="options" type="radio">
+        <label for="yearly">Yearly</label>
+      </div>
+      <div id="overview" class="content active">
+        <svg id="container" width="800" height="600"></svg>
+      </div>
+      <div id="impression" class="content">
+        <svg id="part-two" width="800" height="600"></svg>
+      </div>
+      <div id="user-activity" class="content">
+        <div id="user-activity-charts"></div>
+        <div class="row">
+          <div class="small-12 columns">
+            <ul class="horizontal-list">
+              <li class="data-container">
+                <div class="data-label-top">Minimum</div><span id="max" class="data">3000 </span>
+              </li>
+              <li class="data-container">
+                <div class="data-label-top">Average</div><span id="avg" class="data">3000 </span>
+              </li>
+              <li class="data-container">
+                <div class="data-label-top">Maximum</div><span id="min" class="data">3000 </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="login" class="content">
+        <div id="login-charts"></div>
+        <div class="row">
+          <div class="small-12 columns">
+            <ul class="horizontal-list">
+              <li class="data-container">
+                <div class="data-label-top">Minimum</div><span id="max" class="data">3000 </span>
+              </li>
+              <li class="data-container">
+                <div class="data-label-top">Average</div><span id="avg" class="data">3000 </span>
+              </li>
+              <li class="data-container">
+                <div class="data-label-top">Maximum</div><span id="min" class="data">3000 </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="registered-users" class="content">
+        <div id="registered-users-charts"></div>
+        <div class="row">
+          <div class="small-12 columns">
+            <ul class="horizontal-list">
+              <li class="data-container">
+                <div class="data-label-top">Minimum</div><span id="max" class="data">3000 </span>
+              </li>
+              <li class="data-container">
+                <div class="data-label-top">Average</div><span id="avg" class="data">3000 </span>
+              </li>
+              <li class="data-container">
+                <div class="data-label-top">Maximum</div><span id="min" class="data">3000 </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="traffic" class="content">
+        <div id="traffic-charts"></div>
+        <div class="row">
+          <div class="small-12 columns">
+            <ul class="horizontal-list">
+              <li class="data-container">
+                <div class="data-label-top">Minimum</div><span id="max" class="data">3000 </span>
+              </li>
+              <li class="data-container">
+                <div class="data-label-top">Average</div><span id="avg" class="data">3000 </span>
+              </li>
+              <li class="data-container">
+                <div class="data-label-top">Maximum</div><span id="min" class="data">3000 </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer-->
+    <footer></footer>
+    <!-- build:js /scripts/main.js-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/scripts/foundation.min.js"></script>
+    <script src="/scripts/co2.js"></script>
+    <script src="/scripts/shapes.js"></script>
+    <script src="/scripts/main.js"></script>
+    <script src="/scripts/google.js"></script>
+    <script src="/scripts/radio.js"></script>
+    <!-- endbuild-->
+  </head>
+</html>

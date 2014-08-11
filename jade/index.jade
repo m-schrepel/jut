@@ -1,0 +1,83 @@
+extends ./layouts/_default
+
+block content
+  ul.tabs.vertical(data-tab)
+    li.tab-title.active#no-radios
+      a(href='#overview')
+        i.fa.fa-bar-chart-o
+    li.tab-title
+      a(href='#impression')
+        i.fa.fa-eye
+    li.tab-title
+      a(href='#user-activity')
+        i.fa.fa-users
+  .tabs-content.vertical
+    #radios 
+      input#daily(name="options", type="radio" checked)
+      label(for="daily") Today
+      input#weekly(name="options", type="radio")
+      label(for="weekly") Weekly
+      input#monthly(name="options", type="radio")
+      label(for="monthly") Monthly
+      input#yearly(name="options", type="radio")
+      label(for="yearly") Yearly
+    .content.active#overview
+      svg(id="container" width="800" height="600")
+    .content#impression
+      svg(id="part-two" width="800" height="600")
+    .content#user-activity
+      #user-activity-charts
+      .row
+        .small-12.columns
+          ul.horizontal-list
+            li.data-container
+              .data-label-top Minimum
+              span.data#max 3000 
+            li.data-container
+              .data-label-top Average
+              span.data#avg 3000 
+            li.data-container
+              .data-label-top Maximum
+              span.data#min 3000 
+    .content#login
+      #login-charts
+      .row
+        .small-12.columns
+          ul.horizontal-list
+            li.data-container
+              .data-label-top Minimum
+              span.data#max 3000 
+            li.data-container
+              .data-label-top Average
+              span.data#avg 3000 
+            li.data-container
+              .data-label-top Maximum
+              span.data#min 3000 
+    .content#registered-users
+      #registered-users-charts
+      .row
+        .small-12.columns
+          ul.horizontal-list
+            li.data-container
+              .data-label-top Minimum
+              span.data#max 3000 
+            li.data-container
+              .data-label-top Average
+              span.data#avg 3000 
+            li.data-container
+              .data-label-top Maximum
+              span.data#min 3000 
+    .content#traffic
+      #traffic-charts
+      .row
+        .small-12.columns
+          ul.horizontal-list
+            li.data-container
+              .data-label-top Minimum
+              span.data#max 3000 
+            li.data-container
+              .data-label-top Average
+              span.data#avg 3000 
+            li.data-container
+              .data-label-top Maximum
+              span.data#min 3000 
